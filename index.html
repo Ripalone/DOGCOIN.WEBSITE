@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogecoin 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dogecoin 🚀</h1>
+        <p>Koin Meme Terbaik dan Paling Populer!</p>
+    </header>
+
+    <section class="container">
+        <img src="images/dogecoin.png" alt="Dogecoin" class="doge-logo">
+        <button id="buyButton">Beli Sekarang</button>
+        <p id="message"></p>
+    </section>
+
+    <section class="chart-container">
+        <h2>Grafik Harga Dogecoin</h2>
+        <canvas id="priceChart"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> <section class="transaction">
+    <h2>Beli & Jual Dogecoin</h2>
+    <div class="trade-box">
+        <h3>Beli Dogecoin</h3>
+        <input type="number" id="buyAmount" placeholder="Masukkan jumlah DOGE" min="1">
+        <button onclick="buyDoge()">Beli</button>
+    </div>
+
+    <div class="trade-box">
+        <h3>Jual Dogecoin</h3>
+        <input type="number" id="sellAmount" placeholder="Masukkan jumlah DOGE" min="1">
+        <button onclick="sellDoge()">Jual</button>
+    </div>
+
+    <p id="transactionMessage"></p>
+</section>
+<section class="transaction">
+    <h2>Beli & Jual Dogecoin</h2>
+    <p>Saldo Anda: <span id="userBalance">0</span> DOGE</p>
+    <p>Harga Dogecoin: $<span id="dogePrice">0.00</span></p>
+
+    <div class="trade-box">
+        <h3>Beli Dogecoin</h3>
+        <input type="number" id="buyAmount" placeholder="Masukkan jumlah DOGE" min="1">
+        <button onclick="buyDoge()">Beli</button>
+    </div>
+
+    <div class="trade-box">
+        <h3>Jual Dogecoin</h3>
+        <input type="number" id="sellAmount" placeholder="Masukkan jumlah DOGE" min="1">
+        <button onclick="sellDoge()">Jual</button>
+    </div>
+
+    <p id="transactionMessage"></p>
+</section>
